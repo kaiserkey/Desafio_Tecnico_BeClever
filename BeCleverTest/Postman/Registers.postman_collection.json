@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "9c4a74a1-5e45-42d3-8a02-e5ba551cdc9b",
+		"name": "Registers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23758297",
+		"_collection_link": "https://www.postman.com/lively-comet-872274/workspace/beclever/collection/23758297-9c4a74a1-5e45-42d3-8a02-e5ba551cdc9b?action=share&source=collection_link&creator=23758297"
+	},
+	"item": [
+		{
+			"name": "GetRegisters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5142/api/Registers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5142",
+					"path": [
+						"api",
+						"Registers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRegister",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5142/api/Registers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5142",
+					"path": [
+						"api",
+						"Registers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idEmployee\": 6,\r\n  \"dateTime\": \"2024-05-15T12:38:00\", \r\n  \"registerType\": \"ingreso\",\r\n  \"idBusiness\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5142/api/Registers/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5142",
+					"path": [
+						"api",
+						"Registers",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRegister",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idRegister\": 11,\r\n  \"idEmployee\": 6,\r\n  \"dateTime\": \"2024-05-15\",\r\n  \"registerType\": \"salida\",\r\n  \"idBusiness\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5142/api/Registers/update/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5142",
+					"path": [
+						"api",
+						"Registers",
+						"update",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRegister",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5142/api/Registers/delete/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5142",
+					"path": [
+						"api",
+						"Registers",
+						"delete",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dateFrom",
+							"value": "2023-05-01",
+							"type": "text"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-20",
+							"type": "text"
+						},
+						{
+							"key": "descriptionFilter",
+							"value": "Fernando",
+							"type": "text"
+						},
+						{
+							"key": "businessLocation",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7047/api/Registers/Search",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7047",
+					"path": [
+						"api",
+						"Registers",
+						"Search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Average",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dateFrom",
+							"value": "2024-05-01T00:00:00",
+							"type": "text"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-30T00:00:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7047/api/Registers/Average",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7047",
+					"path": [
+						"api",
+						"Registers",
+						"Average"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

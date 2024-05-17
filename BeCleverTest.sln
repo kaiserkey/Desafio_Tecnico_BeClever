@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeCleverTest", "BeCleverTest\BeCleverTest.csproj", "{8E225845-A973-466C-8700-32F921E97EB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E225845-A973-466C-8700-32F921E97EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E225845-A973-466C-8700-32F921E97EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E225845-A973-466C-8700-32F921E97EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E225845-A973-466C-8700-32F921E97EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F70885F7-E8AE-4358-814B-38EA767D1015}
+	EndGlobalSection
+EndGlobal
